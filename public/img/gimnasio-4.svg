@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2f7f4"/>
+      <stop offset="100%" stop-color="#e5efe9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="20" fill="none" stroke="#1b4d3e" stroke-width="3" stroke-dasharray="14 10"/>
+  
+  <circle cx="600" cy="300" r="54" fill="#1b4d3e" opacity="0.12"/>
+  <circle cx="600" cy="300" r="36" fill="#1b4d3e" opacity="0.85"/>
+  <path d="M584 300h32M600 284v32" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="600" y="410" font-family="Georgia, serif" font-size="44" font-weight="600" fill="#103228" text-anchor="middle">Consultorio de Podología y Bienestar</text>
+  <text x="600" y="470" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#485752" text-anchor="middle">LUGAR RESERVADO PARA FOTO DEL GIMNASIO 4</text>
+  <rect x="420" y="520" width="360" height="46" rx="23" fill="#1b4d3e" opacity="0.95"/>
+  <text x="600" y="550" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#ffffff" letter-spacing="2" text-anchor="middle">ESPACIO PARA FOTO</text>
+</svg>

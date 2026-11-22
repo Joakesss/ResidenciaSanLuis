@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fondos limpios, luminosos y modernos (sin tonos amarillentos ni ocres) */
+  --color-fondo: #f9fbf9;
+  --color-superficie: #ffffff;
+  --color-superficie-alt: #f1f5f3;
+  --color-borde: #e1e7e4;
+
+  /* Texto con alto contraste y excelente legibilidad */
+  --color-tinta: #141a18;
+  --color-tinta-suave: #485752;
+
+  /* El Verde protagónico (sereno, elegante, vital y cuidado) */
+  --color-verde: #1b4d3e;
+  --color-verde-fuerte: #103228;
+  --color-verde-medio: #286b57;
+  --color-verde-claro: #eaf3ef;
+  --color-verde-oscuro: #0a211a;
+  --color-verde-acento: #238562;
+
+  /* Tipografía */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
