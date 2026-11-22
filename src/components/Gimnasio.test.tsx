@@ -20,11 +20,10 @@ describe("Componente Gimnasio", () => {
     expect(screen.getByText("Podología Terapéutica")).toBeInTheDocument();
   });
 
-  it("muestra el apartado con espacio reservado para fotos del gimnasio", () => {
+  it("muestra las fotos reales del gimnasio terapéutico", () => {
     render(<Gimnasio />);
-    expect(screen.getByText(/Lugar reservado/i)).toBeInTheDocument();
     const imgs = screen.getAllByRole("img");
-    const gymImgs = imgs.filter((img) => img.getAttribute("src")?.includes("gimnasio"));
-    expect(gymImgs.length).toBe(4);
+    const gymImgs = imgs.filter((img) => img.getAttribute("src")?.toLowerCase().includes("gimnasio"));
+    expect(gymImgs.length).toBe(5);
   });
 });

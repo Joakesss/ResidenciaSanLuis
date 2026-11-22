@@ -112,14 +112,12 @@ export default function Gimnasio() {
           </div>
           <div className="rounded-full bg-verde-claro border border-verde-medio/20 px-4 py-2 text-xs text-verde-fuerte font-medium flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-verde-medio" />
-            <span>
-              <strong>Lugar reservado:</strong> listo para agregar las fotos que nos envíes.
-            </span>
+            <span>{fotos.length} fotos de las instalaciones</span>
           </div>
         </div>
 
-        {/* Grilla de 4 fotos reservadas para el gimnasio */}
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Grilla de fotos del gimnasio */}
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {fotos.map((foto, idx) => (
             <div
               key={foto.id}
@@ -144,7 +142,7 @@ export default function Gimnasio() {
                   {foto.etiqueta ?? foto.alt}
                 </p>
                 <p className="mt-2 text-[11px] text-tinta-suave/80 uppercase tracking-wide">
-                  Foto {idx + 1} de 4
+                  Foto {idx + 1} de {fotos.length}
                 </p>
               </div>
             </div>
@@ -173,7 +171,7 @@ export default function Gimnasio() {
             <div className="mt-4 rounded-xl bg-black/60 backdrop-blur px-5 py-3 text-center text-sm text-white">
               <p className="font-medium">{actual.etiqueta ?? actual.alt}</p>
               <p className="mt-1 text-xs text-white/70">
-                Lugar preparado para la foto definitiva del gimnasio.
+                Gimnasio terapéutico contiguo a la residencia
               </p>
             </div>
           </div>

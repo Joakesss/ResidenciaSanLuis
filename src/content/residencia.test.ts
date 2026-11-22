@@ -28,10 +28,10 @@ describe("contenido de Residencia SL", () => {
     expect(nombres.some((n) => n.includes("podología") || n.includes("podologia"))).toBe(true);
   });
 
-  it("tiene espacio reservado para fotos en el apartado del gimnasio", () => {
-    expect(contenido.gimnasio.fotos.length).toBeGreaterThanOrEqual(4);
+  it("tiene fotos reales del gimnasio terapéutico", () => {
+    expect(contenido.gimnasio.fotos.length).toBe(5);
     for (const foto of contenido.gimnasio.fotos) {
-      expect(foto.src).toMatch(/^\/img\/gimnasio-.+\.svg$/);
+      expect(foto.src).toMatch(/^\/img\/Gimnasio\d\.jpeg$/);
     }
   });
 
